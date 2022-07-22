@@ -27,7 +27,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: fadein 3s;
+
 }
 
 .cover-container {
@@ -52,6 +52,7 @@ body {
 
 header {
     margin-top: 35px;
+
 }
 
 header h1 {
@@ -60,6 +61,7 @@ header h1 {
     font-size: 70px;
     line-height: 91%;
     font-weight: 300;
+    animation: fadeInBottom 4s;
 }
 
 header h1 strong,
@@ -79,6 +81,7 @@ header h3 {
     letter-spacing: -0.06em;
     margin-top: 23px;
     margin-bottom: 24px;
+    animation: fadeInBottom 3s;
 }
 
 main {
@@ -93,6 +96,7 @@ main {
     box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
     border-radius: 8px;
     text-align: left;
+    animation: fadeInBottom 1s;
 }
 
 main h4 {
@@ -143,6 +147,7 @@ ul {
     justify-content: space-between;
     background: #ECAB03;
     border-radius: 4px;
+    animation: fadeInBottom 1s;
 
 }
 
@@ -158,6 +163,7 @@ ul {
 
 footer {
     position: relative;
+    animation: fadeInBottom 1s;
 }
 
 footer .coin_left {
@@ -299,7 +305,7 @@ footer .coin_right {
 @keyframes bounce {
 
     50% {
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
 
     100% {
@@ -332,17 +338,16 @@ footer .coin_right {
     }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
+@keyframes fadeInBottom {
     from {
         opacity: 0;
+        transform: translateY(10%);
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
-
 
 
 
