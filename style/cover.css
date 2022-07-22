@@ -1,0 +1,377 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    background-image: url('../assets/images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadein 3s;
+}
+
+.cover-container {
+    max-width: 42em;
+    overflow: hidden;
+}
+
+
+/*
+ * Header
+ */
+
+.top-stars {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-image: url('../assets/images/top_stars.png');
+    background-size: cover;
+    height: 220px;
+}
+
+header {
+    margin-top: 35px;
+}
+
+header h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 70px;
+    line-height: 91%;
+    font-weight: 300;
+}
+
+header h1 strong,
+header h3 strong {
+    font-weight: 700;
+}
+
+header h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29.4318px;
+    line-height: 111.5%;
+    /* or 33px */
+
+    text-align: center;
+    letter-spacing: -0.06em;
+    margin-top: 23px;
+    margin-bottom: 24px;
+}
+
+main {
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 27px;
+    gap: 14px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    text-align: left;
+}
+
+main h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+    width: 100%;
+    text-align: center;
+}
+
+main ol {
+    font-size: 14px;
+    font-weight: 400px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+ol,
+ul {
+    padding-left: 12px;
+}
+
+.tips {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.3);
+
+    border-radius: 10px;
+}
+
+
+.btn {
+
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 225px;
+    height: 56px;
+    left: 607px;
+    top: 672px;
+    justify-content: space-between;
+    background: #ECAB03;
+    border-radius: 4px;
+
+}
+
+.btn:hover,
+.btn:hover {
+    background: #ECAB03;
+    color: white;
+}
+
+.coin_pot {
+    margin-bottom: -50px;
+}
+
+footer {
+    position: relative;
+}
+
+footer .coin_left {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 98px;
+    width: 85px;
+    animation: bounce 3s infinite;
+
+}
+
+footer .coin_right {
+    position: absolute;
+    top: -14px;
+    right: 0;
+    height: 98px;
+    width: 85px;
+    animation: bounce 3.5s infinite;
+
+}
+
+.ray_box {
+    position: absolute;
+    margin: auto;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    -webkit-animation: ray_anim 50s linear infinite;
+    animation: ray_anim 50s linear infinite;
+    z-index: -1;
+}
+
+.ray {
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(230, 194, 62, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(230, 194, 62, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    margin-left: 10px;
+    border-radius: 80% 80% 0 0;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.ray1 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: -195px;
+    left: 5px;
+}
+
+.ray2 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(220deg);
+    transform: rotate(220deg);
+    top: -150px;
+    left: 75px;
+}
+
+.ray3 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: -90px;
+    left: 100px;
+}
+
+.ray4 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(305deg);
+    transform: rotate(305deg);
+    top: -10px;
+    left: 100px;
+}
+
+.ray5 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    top: 70px;
+    left: 20px;
+}
+
+.ray6 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    top: 30px;
+    left: -80px;
+}
+
+.ray7 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+    top: -35px;
+    left: -120px;
+}
+
+.ray8 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(100deg);
+    transform: rotate(100deg);
+    top: -95px;
+    left: -150px;
+}
+
+.ray10 {
+    height: 250px;
+    width: 50px;
+    -webkit-transform: rotate(140deg);
+    transform: rotate(140deg);
+    top: -175px;
+    left: -90px;
+}
+
+
+@keyframes ray_anim {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+
+    ;
+
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 595px) {
+    .top-stars {
+        background-size: contain;
+        background-repeat: inherit;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    .coin_pot {
+        margin-bottom: -25px;
+    }
+
+    footer .coin_left {
+        left: -45px;
+    }
+
+    footer .coin_right {
+        right: -45px;
+    }
+
+}
